@@ -46,7 +46,7 @@ export default function ScheduleResults({ response, loading, error }: Props) {
   return (
     <div className="results">
       <div className="tabs">
-        {response.schedules.map((s, i) => (
+        {response.schedules.map((_, i) => (
           <button
             key={i}
             className={i === activeIdx ? "tab active" : "tab"}

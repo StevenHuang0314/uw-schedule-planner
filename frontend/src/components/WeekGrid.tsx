@@ -41,7 +41,7 @@ export default function WeekGrid({ meetings }: Props) {
     : DAYS.slice(0, 5);
   const displayDays = activeDays.length ? activeDays : DAYS;
 
-  const hourMarks = [];
+  const hourMarks: number[] = [];
   for (let t = GRID_START; t <= GRID_END; t += 60) hourMarks.push(t);
 
   return (
